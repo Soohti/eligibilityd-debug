@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>cat.me0w.zouxian</string>
+    <string>cat.soohti.eligibilityd-debug</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/bin/zouxian</string>
+        <string>/usr/local/bin/eligibilityd-debug</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
