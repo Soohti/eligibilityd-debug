@@ -1,6 +1,6 @@
 ## Disclaimer
 
-Disabling SIP can cause some unknown effect. And for now, Xcode LLM is not stable and may cause kernel panics, which will lose some of your document modifications. Please use with caution.
+Disabling SIP will reduce the security of the system and make iOS apps in App Store and Apple Pay unusable.
 
 ## Install
 
