@@ -1,6 +1,6 @@
 ## Disclaimer
 
-Disabling SIP will reduce the security of the system and make iOS apps in App Store and Apple Pay unusable.
+Disabling SIP (although partially) will reduce the security of the system and make iOS apps in App Store and Apple Pay unusable.
 
 ## Install
 
