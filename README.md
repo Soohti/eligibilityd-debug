@@ -7,7 +7,7 @@ Disabling SIP (although partially) will reduce the security of the system and ma
 ### Prerequisites
 
 - SIP debugging restrictions are disabled (via `csrutil enable --without debug` command in recovery mode).
-- For Apple Intelligence: A non-China Apple ID signed in, region set to the United States, and language set to English (US).
+- For Apple Intelligence: A non-China Apple ID signed in.
 - For Xcode Predictive Code Completion: Xcode is installed and run at least once.
 
 > [!NOTE]  
@@ -18,8 +18,8 @@ Disabling SIP (although partially) will reduce the security of the system and ma
 ```shell
 sudo curl https://raw.githubusercontent.com/Soohti/eligibilityd-debug/master/eligibilityd-debug.sh -o /usr/local/bin/eligibilityd-debug
 sudo chmod +x /usr/local/bin/eligibilityd-debug
-sudo curl https://raw.githubusercontent.com/Soohti/eligibilityd-debug/master/cat.soohti.eligibilityd-debug.plist -o /Library/LaunchDaemons/cat.soohti.eligibilityd-debug.plist
-sudo launchctl load -w /Library/LaunchDaemons/cat.soohti.eligibilityd-debug.plist
+sudo curl https://raw.githubusercontent.com/Soohti/eligibilityd-debug/master/com.soohti.eligibilityd-debug.plist -o /Library/LaunchDaemons/com.soohti.eligibilityd-debug.plist
+sudo launchctl load -w /Library/LaunchDaemons/com.soohti.eligibilityd-debug.plist
 ```
 
 ## Uninstall
@@ -27,8 +27,8 @@ sudo launchctl load -w /Library/LaunchDaemons/cat.soohti.eligibilityd-debug.plis
 ### If Installed Manually
 
 ```shell
-sudo launchctl unload -w /Library/LaunchDaemons/cat.soohti.eligibilityd-debug.plist
-sudo rm /Library/LaunchDaemons/cat.soohti.eligibilityd-debug.plist
+sudo launchctl unload -w /Library/LaunchDaemons/com.soohti.eligibilityd-debug.plist
+sudo rm /Library/LaunchDaemons/com.soohti.eligibilityd-debug.plist
 sudo rm /usr/local/bin/eligibilityd-debug
 ```
 
