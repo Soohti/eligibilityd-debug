@@ -4,6 +4,9 @@ MAX_WAIT_TIME=60
 CHECK_INTERVAL=1
 SECONDS_PASSED=0
 
+launchctl stop com.apple.eligibilityd
+sleep 0.5
+launchctl start com.apple.eligibilityd
 while [ $SECONDS_PASSED -lt $MAX_WAIT_TIME ]; do
   PID=$(pgrep eligibilityd)
   if [ ! -z "$PID" ]; then
